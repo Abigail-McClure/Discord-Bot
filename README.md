@@ -9,13 +9,13 @@ A Discord bot that posts memes and gifs. Uses meme-api (reddit) with a Tenor GIF
 - Retries/fallbacks and safe error handling
 
 ## Prerequisites
-- Python 3.8+ (3.10 or 3.11 recommended)  
+- Python 3.8+
 - A Discord bot token (create an app at the [Discord Developer Portal](https://discord.com/developers/applications))
 - A Tenor API key (get an API key in the Google Cloud Console)
 
 ## Set up:
 ### 1. Clone the repository
-git clone https://github.com/Abigail-McClure/Discord-Bot.git
+git clone https://github.com/Abigail-McClure/Git-Bot.git
 cd Discord-Bot
 
 ### 2. Create a virtual environment (recommended)
@@ -51,6 +51,15 @@ python bot.py
 When the bot is online, you’ll see a message like:
 Logged on as gif bot #1234!
 
+### 6. Invite the bot to your server
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Open your app > **OAuth2 > URL Generator**.
+3. Under **Scopes**, select `bot`.
+4. Under **Bot Permissions**, make sure these are checked:
+   - Send Messages
+   - Read Messages/View Channels
+   - Embed Links
+5. Copy the generated URL and open it in your browser to invite the bot.
 
 ## Commands Overview:
 $meme	- Fetch a random meme (uses meme-api, falls back to Tenor) \
